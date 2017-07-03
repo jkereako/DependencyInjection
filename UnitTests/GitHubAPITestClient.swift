@@ -9,7 +9,8 @@
 import Foundation
 
 final class GitHubAPITestClient: GitHubAPIClientType {
+    static let stubText = "Tell me how am I supposed to live without you?"
     func zen(completion: @escaping (String) -> Void) {
-        completion("Tell me how am I supposed to live without you?")
+        completion(GitHubAPITestClient.stubText)
     }
 }

@@ -15,6 +15,8 @@
 		3609788A1EBF363900B64224 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 360978871EBF361100B64224 /* Info.plist */; };
 		3609788C1EBF374700B64224 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3609788B1EBF374700B64224 /* Assets.xcassets */; };
 		368170751EBF37A5000BA1DB /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3609787C1EBF35F600B64224 /* Info.plist */; };
+		620C01F21F0A7CC3000C2CF0 /* Registry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620C01F11F0A7CC3000C2CF0 /* Registry.swift */; };
+		62184E951F0A7D6F001C673B /* TypeRegistrationTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62184E941F0A7D6F001C673B /* TypeRegistrationTestCase.swift */; };
 		6277AA001F09A1B400B67BD9 /* TypeContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6277A9FF1F09A1B400B67BD9 /* TypeContainer.swift */; };
 		6277AA021F09A24A00B67BD9 /* TypeRegistry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6277AA011F09A24A00B67BD9 /* TypeRegistry.swift */; };
 		6277AA041F09A2FB00B67BD9 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6277AA031F09A2FB00B67BD9 /* Helpers.swift */; };
@@ -48,13 +50,15 @@
 		3609787E1EBF35F600B64224 /* DependencyInjectionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DependencyInjectionTests.swift; sourceTree = "<group>"; };
 		360978871EBF361100B64224 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3609788B1EBF374700B64224 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		6277A9FF1F09A1B400B67BD9 /* TypeContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TypeContainer.swift; path = TypeContainer.swift; sourceTree = "<group>"; };
-		6277AA011F09A24A00B67BD9 /* TypeRegistry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TypeRegistry.swift; path = TypeRegistry.swift; sourceTree = "<group>"; };
-		6277AA031F09A2FB00B67BD9 /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Helpers.swift; path = Helpers.swift; sourceTree = "<group>"; };
-		6277AA051F09A55800B67BD9 /* TypeAliases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TypeAliases.swift; path = TypeAliases.swift; sourceTree = "<group>"; };
-		6277AA071F09A7A200B67BD9 /* AppContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppContainer.swift; sourceTree = "<group>"; };
-		6277AA091F09A98C00B67BD9 /* RegistrationModuleType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RegistrationModuleType.swift; path = RegistrationModuleType.swift; sourceTree = "<group>"; };
-		6277AA0B1F09A9B300B67BD9 /* Registry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Registry.swift; path = Registry.swift; sourceTree = "<group>"; };
+		620C01F11F0A7CC3000C2CF0 /* Registry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Registry.swift; sourceTree = "<group>"; };
+		62184E941F0A7D6F001C673B /* TypeRegistrationTestCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TypeRegistrationTestCase.swift; sourceTree = "<group>"; };
+		6277A9FF1F09A1B400B67BD9 /* TypeContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeContainer.swift; sourceTree = "<group>"; };
+		6277AA011F09A24A00B67BD9 /* TypeRegistry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeRegistry.swift; sourceTree = "<group>"; };
+		6277AA031F09A2FB00B67BD9 /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		6277AA051F09A55800B67BD9 /* TypeAliases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeAliases.swift; sourceTree = "<group>"; };
+		6277AA071F09A7A200B67BD9 /* AppContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppContainer.swift; path = AppContainer.swift; sourceTree = "<group>"; };
+		6277AA091F09A98C00B67BD9 /* RegistrationModuleType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationModuleType.swift; sourceTree = "<group>"; };
+		6277AA0B1F09A9B300B67BD9 /* Registry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Registry.swift; sourceTree = "<group>"; };
 		6277AA0D1F09AB5500B67BD9 /* GitHubAPIClientType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubAPIClientType.swift; sourceTree = "<group>"; };
 		6277AA0F1F09ABBD00B67BD9 /* GitHubAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubAPIClient.swift; sourceTree = "<group>"; };
 		6277AA111F09AC7600B67BD9 /* GitHubAPITestClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubAPITestClient.swift; sourceTree = "<group>"; };
@@ -102,7 +106,7 @@
 		360978701EBF35DA00B64224 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				6277AA071F09A7A200B67BD9 /* AppContainer.swift */,
+				620C01F01F0A7CA8000C2CF0 /* TypeRegistration */,
 				360978711EBF35DA00B64224 /* AppDelegate.swift */,
 				6277AA0F1F09ABBD00B67BD9 /* GitHubAPIClient.swift */,
 				6277AA0D1F09AB5500B67BD9 /* GitHubAPIClientType.swift */,
@@ -133,8 +137,10 @@
 			isa = PBXGroup;
 			children = (
 				360978801EBF35F600B64224 /* SupportFiles */,
+				620C01EF1F0A7C93000C2CF0 /* TypeRegistration */,
 				3609787E1EBF35F600B64224 /* DependencyInjectionTests.swift */,
 				6277AA111F09AC7600B67BD9 /* GitHubAPITestClient.swift */,
+				62184E941F0A7D6F001C673B /* TypeRegistrationTestCase.swift */,
 			);
 			path = UnitTests;
 			sourceTree = "<group>";
@@ -147,17 +153,32 @@
 			path = SupportFiles;
 			sourceTree = "<group>";
 		};
+		620C01EF1F0A7C93000C2CF0 /* TypeRegistration */ = {
+			isa = PBXGroup;
+			children = (
+				620C01F11F0A7CC3000C2CF0 /* Registry.swift */,
+			);
+			path = TypeRegistration;
+			sourceTree = "<group>";
+		};
+		620C01F01F0A7CA8000C2CF0 /* TypeRegistration */ = {
+			isa = PBXGroup;
+			children = (
+				6277AA0B1F09A9B300B67BD9 /* Registry.swift */,
+			);
+			path = TypeRegistration;
+			sourceTree = "<group>";
+		};
 		62C68B3F1F0A7AC000E526B1 /* Library */ = {
 			isa = PBXGroup;
 			children = (
+				6277AA071F09A7A200B67BD9 /* AppContainer.swift */,
 				6277AA031F09A2FB00B67BD9 /* Helpers.swift */,
 				6277AA091F09A98C00B67BD9 /* RegistrationModuleType.swift */,
-				6277AA0B1F09A9B300B67BD9 /* Registry.swift */,
 				6277AA051F09A55800B67BD9 /* TypeAliases.swift */,
 				6277A9FF1F09A1B400B67BD9 /* TypeContainer.swift */,
 				6277AA011F09A24A00B67BD9 /* TypeRegistry.swift */,
 			);
-			name = Library;
 			path = Library;
 			sourceTree = "<group>";
 		};
@@ -287,6 +308,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				620C01F21F0A7CC3000C2CF0 /* Registry.swift in Sources */,
+				62184E951F0A7D6F001C673B /* TypeRegistrationTestCase.swift in Sources */,
 				360978891EBF363900B64224 /* DependencyInjectionTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

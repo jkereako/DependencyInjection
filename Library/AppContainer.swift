@@ -30,3 +30,10 @@ func initializeAppContainer(withContainer container: TypeContainer) {
 
     appContainer = container
 }
+
+#if DEBUG
+/// Sets `appContainer` to nil. This is only intended to be used with unit tests.
+func destroyAppContainer() {
+    appContainer = nil
+}
+#endif
