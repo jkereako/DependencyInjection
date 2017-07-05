@@ -16,7 +16,7 @@ final class TypeContainer {
     }
     
     func resolve<T>(type aType: T.Type) -> T {
-        typealias ResolverType = (TypeContainer) -> T
+        typealias ResolverType = (Void) -> T
 
         guard let resolverAny = factories[hash(type: aType.self)] else {
             fatalError("Could not find a type registration for \(T.self)")
@@ -28,6 +28,6 @@ final class TypeContainer {
             )
         }
 
-        return resolver(self)
+        return resolver()
     }
 }

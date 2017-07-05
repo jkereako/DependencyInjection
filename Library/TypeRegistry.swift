@@ -25,7 +25,7 @@ final class TypeRegistry {
         }
     }
 
-    func register<T>(type aType: T.Type, resolver: @escaping (TypeContainer) -> T) {
+    func register<T>(type aType: T.Type, resolver: @escaping (Void) -> T) {
         let typeHash = hash(type: aType)
 
         factories[typeHash] = resolver
