@@ -8,6 +8,7 @@
 
 import Foundation
 
+/// The actual API client. Makes HTTP requests to `api.github.com/zen`.
 final class GitHubAPIClient: GitHubAPIClientType {
     func zen(completion: @escaping (String) -> Void) {
         let url = URL(string: "https://api.github.com/zen")!

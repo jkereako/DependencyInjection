@@ -8,6 +8,7 @@
 
 private var appContainer: TypeContainer?
 
+/// Top-level container for resolving registered types
 var AppContainer: TypeContainer {
     get {
         guard let container = appContainer else {

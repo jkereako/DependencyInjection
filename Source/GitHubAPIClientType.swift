@@ -8,6 +8,8 @@
 
 import Foundation
 
+/// Provides a generic interface for the GitHub API client. There are 2 implementations of this
+/// protocol, GitHubAPIClient and GitHubTestAPIClient.
 protocol GitHubAPIClientType {
     func zen(completion: @escaping (String) -> Void)
 }

@@ -8,6 +8,7 @@
 
 @testable import DependencyInjection
 
+/// The unit test type registry. Registers type mocks.
 final class RegistryModule: RegistrationModuleType {
     func register(registry: TypeRegistry) {
         registry.register(type: GitHubAPIClientType.self) { _ in return GitHubAPITestClient() }

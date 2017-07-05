@@ -8,8 +8,10 @@
 
 import Foundation
 
+/// The mock API client. Returns canned responses.
 final class GitHubAPITestClient: GitHubAPIClientType {
     static let stubText = "Tell me how am I supposed to live without you?"
+
     func zen(completion: @escaping (String) -> Void) {
         completion(GitHubAPITestClient.stubText)
     }

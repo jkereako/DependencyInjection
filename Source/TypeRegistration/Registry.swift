@@ -8,6 +8,7 @@
 
 import Foundation
 
+/// The type registry.
 final class RegistryModule: RegistrationModuleType {
     func register(registry: TypeRegistry) {
         registry.register(type: GitHubAPIClientType.self) { _ in return GitHubAPIClient() }

@@ -14,7 +14,7 @@ final class TypeContainer {
     init(factories: FactoryDictionary) {
         self.factories = factories
     }
-
+    
     func resolve<T>(type aType: T.Type) -> T {
         typealias ResolverType = (TypeContainer) -> T
 
@@ -23,8 +23,9 @@ final class TypeContainer {
         }
 
         guard let resolver = resolverAny as? ResolverType else {
-            fatalError("Resolver found, but not the expected type '\(type(of: ResolverType.self))'" +
-                ".  Was: '\(type(of:resolverAny))'")
+            fatalError(
+                "Expected '\(type(of: ResolverType.self))' but got '\(type(of:resolverAny))'"
+            )
         }
 
         return resolver(self)

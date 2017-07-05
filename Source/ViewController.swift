@@ -16,6 +16,10 @@ final class ViewController: UIViewController {
 
         let apiClient = AppContainer.resolve(type: GitHubAPIClientType.self)
 
+        // Sanity check. Assert that we've registered the correct implementation of 
+        // GitHubAPIClientType.
+        assert(apiClient is GitHubAPIClient)
+
         apiClient.zen {
             self.quote.text = $0
         }
