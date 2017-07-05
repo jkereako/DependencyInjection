@@ -15,7 +15,11 @@ final class GitHubAPIClient: GitHubAPIClientType {
         request.httpMethod = "GET"
 
         let task = URLSession.shared.dataTask(with: request) { data, response, error in
-            completion(String(data: data!, encoding: .utf8) ?? "")
+            // The completion handler for `dataTask` runs on a background thread. Since this URL
+            // task will update the UI, we call the completion handler on the UI thread.
+            DispatchQueue.main.async {
+                completion(String(data: data!, encoding: .utf8) ?? "")
+            }
         }
 
         task.resume()

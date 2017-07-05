@@ -15,14 +15,14 @@ final class DependencyInjectionTests: TypeRegistrationTestCase  {
     override func setUp() {
         super.setUp()
 
-        apiClient = AppContainer.resolveType()
+        apiClient = AppContainer.resolve(type: GitHubAPIClientType.self)
     }
 
     func testTypeResolution() {
         XCTAssertTrue(apiClient is GitHubAPITestClient)
     }
 
-    func testExample() {
+    func testZenQuote() {
         apiClient.zen { quote in
             XCTAssertEqual(quote, GitHubAPITestClient.stubText)
         }

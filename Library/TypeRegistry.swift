@@ -19,31 +19,15 @@ final class TypeRegistry {
 
     private var factories = FactoryDictionary()
 
-    init() {
-        register(type: Void.self) { _ in Void() }
-    }
-
     func register(modules: RegistrationModuleType...) {
         modules.forEach {
             $0.register(registry: self)
         }
     }
 
+    func register<T>(type aType: T.Type, resolver: @escaping (TypeContainer) -> T) {
+        let typeHash = hash(type: aType)
 
-    func register<T>(type ptype: T.Type, resolver: @escaping (TypeContainer) -> T) {
-        let factory: (TypeContainer) -> T
-        let typeHash = hash(type: ptype)
-        var instance: T?
-
-        factory = { container in
-            if instance == nil {
-                instance = resolver(container)
-            }
-
-            return instance!
-        }
-
-        // Store
-        factories[typeHash] = factory
+        factories[typeHash] = resolver
     }
 }

@@ -1,6 +1,6 @@
 //
 //  GitHubAPITestClient.swift
-//  DependencyInjection
+//  DependencyInjectionTests
 //
 //  Created by Jeff Kereakoglow on 7/2/17.
 //  Copyright © 2017 Alexis Digital. All rights reserved.

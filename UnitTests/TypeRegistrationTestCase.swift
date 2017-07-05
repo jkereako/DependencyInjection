@@ -1,6 +1,6 @@
 //
 //  TypeRegistrationTestCase.swift
-//  DependencyInjection
+//  DependencyInjectionTests
 //
 //  Created by Jeff Kereakoglow on 7/3/17.
 //  Copyright © 2017 Alexis Digital. All rights reserved.

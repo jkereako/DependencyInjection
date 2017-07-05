@@ -9,10 +9,18 @@
 import UIKit
 
 final class ViewController: UIViewController {
+    @IBOutlet weak var quote: UILabel!
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        
+        let apiClient = AppContainer.resolve(type: GitHubAPIClientType.self)
+
+        apiClient.zen {
+            self.quote.text = $0
+        }
+
+        quote.text = ""
     }
 }
 
