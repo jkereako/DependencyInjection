@@ -10,13 +10,6 @@ import Foundation
 
 /// Dependency Injection registry
 final class TypeRegistry {
-    var container: TypeContainer {
-        get {
-            let container = TypeContainer(factories: factories)
-            return container
-        }
-    }
-
     private var factories = FactoryDictionary()
 
     func register(modules: RegistrationModuleType...) {
@@ -29,5 +22,21 @@ final class TypeRegistry {
         let typeHash = hash(type: aType)
 
         factories[typeHash] = resolver
+    }
+
+    func resolve<T>(type aType: T.Type) -> T {
+        typealias ResolverType = (Void) -> T
+
+        guard let resolverAny = factories[hash(type: aType.self)] else {
+            fatalError("Could not find a type registration for \(T.self)")
+        }
+
+        guard let resolver = resolverAny as? ResolverType else {
+            fatalError(
+                "Expected '\(type(of: ResolverType.self))' but got '\(type(of:resolverAny))'"
+            )
+        }
+
+        return resolver()
     }
 }

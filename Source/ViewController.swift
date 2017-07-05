@@ -14,7 +14,7 @@ final class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let apiClient = AppContainer.resolve(type: GitHubAPIClientType.self)
+        let apiClient = AppRegistry.resolve(type: GitHubAPIClientType.self)
 
         // Sanity check. Assert that we've registered the correct implementation of 
         // GitHubAPIClientType.

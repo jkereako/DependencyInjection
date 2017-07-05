@@ -15,7 +15,7 @@ final class DependencyInjectionTests: TypeRegistrationTestCase  {
     override func setUp() {
         super.setUp()
 
-        apiClient = AppContainer.resolve(type: GitHubAPIClientType.self)
+        apiClient = AppRegistry.resolve(type: GitHubAPIClientType.self)
     }
 
     func testTypeResolution() {

@@ -17,11 +17,10 @@
 		368170751EBF37A5000BA1DB /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3609787C1EBF35F600B64224 /* Info.plist */; };
 		620C01F21F0A7CC3000C2CF0 /* Registry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620C01F11F0A7CC3000C2CF0 /* Registry.swift */; };
 		62184E951F0A7D6F001C673B /* TypeRegistrationTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62184E941F0A7D6F001C673B /* TypeRegistrationTestCase.swift */; };
-		6277AA001F09A1B400B67BD9 /* TypeContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6277A9FF1F09A1B400B67BD9 /* TypeContainer.swift */; };
 		6277AA021F09A24A00B67BD9 /* TypeRegistry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6277AA011F09A24A00B67BD9 /* TypeRegistry.swift */; };
 		6277AA041F09A2FB00B67BD9 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6277AA031F09A2FB00B67BD9 /* Helpers.swift */; };
 		6277AA061F09A55800B67BD9 /* TypeAliases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6277AA051F09A55800B67BD9 /* TypeAliases.swift */; };
-		6277AA081F09A7A200B67BD9 /* AppContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6277AA071F09A7A200B67BD9 /* AppContainer.swift */; };
+		6277AA081F09A7A200B67BD9 /* AppRegistry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6277AA071F09A7A200B67BD9 /* AppRegistry.swift */; };
 		6277AA0A1F09A98C00B67BD9 /* RegistrationModuleType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6277AA091F09A98C00B67BD9 /* RegistrationModuleType.swift */; };
 		6277AA0C1F09A9B300B67BD9 /* Registry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6277AA0B1F09A9B300B67BD9 /* Registry.swift */; };
 		6277AA0E1F09AB5500B67BD9 /* GitHubAPIClientType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6277AA0D1F09AB5500B67BD9 /* GitHubAPIClientType.swift */; };
@@ -52,11 +51,10 @@
 		3609788B1EBF374700B64224 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		620C01F11F0A7CC3000C2CF0 /* Registry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Registry.swift; sourceTree = "<group>"; };
 		62184E941F0A7D6F001C673B /* TypeRegistrationTestCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TypeRegistrationTestCase.swift; sourceTree = "<group>"; };
-		6277A9FF1F09A1B400B67BD9 /* TypeContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeContainer.swift; sourceTree = "<group>"; };
 		6277AA011F09A24A00B67BD9 /* TypeRegistry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeRegistry.swift; sourceTree = "<group>"; };
 		6277AA031F09A2FB00B67BD9 /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
 		6277AA051F09A55800B67BD9 /* TypeAliases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeAliases.swift; sourceTree = "<group>"; };
-		6277AA071F09A7A200B67BD9 /* AppContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppContainer.swift; path = AppContainer.swift; sourceTree = "<group>"; };
+		6277AA071F09A7A200B67BD9 /* AppRegistry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRegistry.swift; sourceTree = "<group>"; };
 		6277AA091F09A98C00B67BD9 /* RegistrationModuleType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationModuleType.swift; sourceTree = "<group>"; };
 		6277AA0B1F09A9B300B67BD9 /* Registry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Registry.swift; sourceTree = "<group>"; };
 		6277AA0D1F09AB5500B67BD9 /* GitHubAPIClientType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubAPIClientType.swift; sourceTree = "<group>"; };
@@ -172,11 +170,10 @@
 		62C68B3F1F0A7AC000E526B1 /* Library */ = {
 			isa = PBXGroup;
 			children = (
-				6277AA071F09A7A200B67BD9 /* AppContainer.swift */,
+				6277AA071F09A7A200B67BD9 /* AppRegistry.swift */,
 				6277AA031F09A2FB00B67BD9 /* Helpers.swift */,
 				6277AA091F09A98C00B67BD9 /* RegistrationModuleType.swift */,
 				6277AA051F09A55800B67BD9 /* TypeAliases.swift */,
-				6277A9FF1F09A1B400B67BD9 /* TypeContainer.swift */,
 				6277AA011F09A24A00B67BD9 /* TypeRegistry.swift */,
 			);
 			path = Library;
@@ -298,9 +295,8 @@
 				6277AA0C1F09A9B300B67BD9 /* Registry.swift in Sources */,
 				6277AA101F09ABBD00B67BD9 /* GitHubAPIClient.swift in Sources */,
 				6277AA041F09A2FB00B67BD9 /* Helpers.swift in Sources */,
-				6277AA001F09A1B400B67BD9 /* TypeContainer.swift in Sources */,
 				6277AA0A1F09A98C00B67BD9 /* RegistrationModuleType.swift in Sources */,
-				6277AA081F09A7A200B67BD9 /* AppContainer.swift in Sources */,
+				6277AA081F09A7A200B67BD9 /* AppRegistry.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

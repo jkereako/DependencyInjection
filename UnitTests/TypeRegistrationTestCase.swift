@@ -14,7 +14,7 @@ class TypeRegistrationTestCase: XCTestCase {
     override func setUp() {
         super.setUp()
 
-        destroyAppContainer()
+        destroyAppRegistry()
         initializeAppContainer(withRegistrationModule: RegistryModule())
     }
 }
