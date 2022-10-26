@@ -18,7 +18,7 @@ var AppRegistry: TypeRegistry {
     }
 }
 
-func initializeAppContainer(withRegistrationModule module: RegistrationModuleType) {
+func initializeAppContainer(with module: RegistrationModuleType) {
     let registry = TypeRegistry()
     registry.register(modules: module)
     appRegistry = registry

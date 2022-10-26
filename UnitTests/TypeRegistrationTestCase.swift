@@ -15,6 +15,6 @@ class TypeRegistrationTestCase: XCTestCase {
         super.setUp()
 
         destroyAppRegistry()
-        initializeAppContainer(withRegistrationModule: RegistryModule())
+        initializeAppContainer(with: RegistryModule())
     }
 }
